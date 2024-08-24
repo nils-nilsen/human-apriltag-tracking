@@ -90,8 +90,10 @@ After calibrating the camera, you can start tracking:
 
 1. **Attach AprilTags**
 
+    First, you have to print out the Apriltags. There are 4 different tags in the project. There is also a PDF with two tags that are 15 cm in size and two that are 20 cm in size. If you adjust the size of the tags, you also have to adjust it in the code.
+
     Attach AprilTags to the person you want to track. By default, the system uses tags with IDs for the front, back, and shoulders.
-In my case, I attached two tags to the front and back of the camera, as shown in the photo below.
+In my case, I attached two tags to the front and back, and two tags at each shoulder, as shown in the photo below.
 
     ![Tags](src/assets/foto-tags.png)
 
