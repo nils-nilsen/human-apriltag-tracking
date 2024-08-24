@@ -22,7 +22,7 @@ The project also includes several helper tools. I realized that there are no nic
 - Real-Time Human Tracking: Tracks the position and orientation of a person in real-time using AprilTags.
 - Camera Calibration: Calibrates the camera using a chessboard pattern to correct lens distortion and ensure accurate tracking.
 - Visualization: Visualizes the paths of the tracked person.
-- Data Handling: Reutrns the position, orientation, and rotation data. Data transmitted via UDP, but anything else can be used.
+- Data Handling: Returns the position, orientation, and rotation data. Data transmitted via UDP, but anything else can be used.
 
 ## Prerequisites
 
