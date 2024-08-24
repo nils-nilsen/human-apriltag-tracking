@@ -4,9 +4,9 @@
 ## Overview
 
 This project was part of my master's thesis.
-I needed a cheap and relatively simple **real-time** tracking system to determine the position of people in a room.
+I needed a cheap and simple **real-time** tracking system to determine the position of people in a room.
 Most tracking systems are either very expensive or very complicated to calibrate.
-And I thought that it might be useful for others too.
+I thought that it might be useful for others too.
 
 **All you need is a webcam and some cardboard.**
 
@@ -16,7 +16,7 @@ The tracking system is based on the visual fiducial system **_Apriltags_** from 
 [Apriltag Repository](https://github.com/AprilRobotics/apriltag)
 
 
-The project also includes several helper tools. I realized that there are no nice and simple tools for actually relatively simple tasks like camera calibration.
+The project also includes several helper tools. I found out that there are no nice and simple tools for actually tasks like camera calibration.
 
 ## Features
 
@@ -52,7 +52,7 @@ In my case, the Python version was the problem. It worked with **Python version 
 
 The camera needs to be calibrated to correct lens distortion. Follow these steps:
 
-#### 1. Capture Calibration Images:
+#### 1.1. Capture Calibration Images:
 
 First, you have to take photos of a chessboard to calibrate the camera.
 Since it was complicated to always take photos myself, I developed a tool that automatically takes photos.
@@ -89,26 +89,26 @@ You can also check the calibration with the file `check_calibration.py`.
 
 After calibrating the camera, you can start tracking:
 
-1. **Attach AprilTags**
+#### 3.1. Attach AprilTags
 
-    First, you have to print out the Apriltags. There are 4 different tags in the project. There is also a PDF with two tags that are 15 cm in size and two that are 20 cm in size. If you adjust the size of the tags, you also have to adjust it in the code.
+First, you have to print out the Apriltags. There are 4 different tags in the project. There is also a PDF with two tags that are 15 cm in size and two that are 20 cm in size. If you adjust the size of the tags, you also have to adjust it in the code.
 
-    Attach AprilTags to the person you want to track. By default, the system uses tags with IDs for the front, back, and shoulders.
+Attach AprilTags to the person you want to track. By default, the system uses tags with IDs for the front, back, and shoulders.
 In my case, I attached two tags to the front and back, and two tags at each shoulder, as shown in the photo below.
 
-    ![Tags](src/assets/foto-tags.png)
+![Tags](src/assets/foto-tags.png)
 
 
-2. **Start Tracking**
+#### 3.2. Start Tracking
 
-    Run the tracking script:
+Run the tracking script:
 
-    `python src/main.py`
+`python src/main.py`
 
 
 ## Usage
 
-**Tracking Visualization:**
+#### Tracking Visualization
 
 The system visualizes the live tracking data directly on the video feed. The tags detected on the person will be highlighted, and their position and orientation will be displayed.
 When the tracking is stopped (by pressing `q`), a graphic is plotted with the positions of the person.
