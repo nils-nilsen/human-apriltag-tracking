@@ -4,7 +4,10 @@
 ## Overview
 
 This project was part of my master's thesis.
-I needed a cheap and relatively simple **real-time** tracking system to determine the position of people in a room. Most tracking systems are either very expensive or very complicated to calibrate. In this project, all you need is a webcam and some cardboard.
+I needed a cheap and relatively simple **real-time** tracking system to determine the position of people in a room.
+Most tracking systems are either very expensive or very complicated to calibrate.
+
+**All you need is a webcam and some cardboard.**
 
 The tracking system is based on the visual fiducial system Apriltags from the [APRIL Robotics Laboratory at the University of Michigan](https://april.eecs.umich.edu/software/apriltag).
 And I thought that it might be useful for others too.
