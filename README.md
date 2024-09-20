@@ -41,7 +41,7 @@ The Python bindings have to be installed as described in the [Apriltag Repositor
 
 Installing the Apriltag Python bindings can be very challenging. 
 It took me some time to get it working.
-First, C++ code has to be compiled and it was not clear where the Python package would be stored and how it can used it in the project. 
+First, C code has to be compiled and it was not clear where the Python package would be stored and how it can used it in the project. 
 There are also a few pre-built Python bindings, as described in the Apriltag repository, but they didn't work for me.
 
 In my case, the Python version was the problem. It worked with **Python version 3.12**.
